@@ -1,9 +1,9 @@
 import React from 'react'
-import './FollowerCard.css'
+import './FollowersCard.css'
 import { Followers } from '../../Data/FollowersData'
 
 
-function FollowerCard() {
+function FollowersCard() {
   return (
     <div className="FollowersCard">
         <h3>Who is following you</h3>
@@ -28,4 +28,4 @@ function FollowerCard() {
   )
 }
 
-export default FollowerCard
+export default FollowersCard
