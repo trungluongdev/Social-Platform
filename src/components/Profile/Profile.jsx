@@ -3,6 +3,7 @@ import './Profile.css'
 import ProfileLeft from '../ProfileLeft/ProfileLeft'
 import PostSide from '../../components/PostSide/PostSide'
 import ProfileCard from '../ProfileCard/ProfileCard'
+import RightSide from '../RightSide/RightSide'
 
 function Profile() {
   return (
@@ -12,6 +13,7 @@ function Profile() {
             <ProfileCard/>
             <PostSide/>
         </div>
+        <RightSide/>
     </div>
   )
 }
