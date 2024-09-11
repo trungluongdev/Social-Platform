@@ -10,7 +10,7 @@ function Profile() {
     <div className="Profile">
         <ProfileLeft/>
         <div className="Profile-center">
-            <ProfileCard/>
+            {/* <ProfileCard/> */}
             <PostSide/>
         </div>
         <RightSide/>

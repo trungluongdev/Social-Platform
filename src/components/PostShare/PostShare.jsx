@@ -12,6 +12,7 @@ function PostShare() {
     const imageRef = useRef()
 
     const onImageChange = (event) => {
+      debugger
         if (event.target.files && event.target.files[0]) {
           let img = event.target.files[0];
           setImage({
@@ -46,7 +47,7 @@ function PostShare() {
             Share
         </button>
         <div style={{ display: "none" }}>
-            <input type="file" name="myImage" ref={imageRef} onChange={onImageChange} />
+            <input type="file" name="myImage" ref={imageRef} onChange={onImageChange} onClick={(e)=> {e.currentTarget.value = null}}/>
         </div>
    </div>
      {image && (
