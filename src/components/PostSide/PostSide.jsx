@@ -7,7 +7,7 @@ import ProfileCard from '../ProfileCard/ProfileCard'
 function PostSide() {
   return (
     <div className="PostSide">
-      <ProfileCard/>
+      {/* <ProfileCard/> */}
         <PostShare/>
         <Posts/>
     </div>

@@ -5,6 +5,7 @@
     background-color: var(--cardColor);
     border-radius: 1rem;
     gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Post>img {
@@ -12,10 +13,79 @@
     max-height: 20rem;
     object-fit: cover;
     border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Post>img:hover {
+    transform: scale(1.05);
 }
 
 .postReact {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
+}
+
+.detail-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-icon {
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.action-wrapper {
+    position: relative;
+
+}
+
+.action-dropdown {
+    position: absolute;
+    top: 30px;
+    width: 100px;
+    border-radius: 4px;
+    right: 0;
+    display: none;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    color: black;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Smooth fade-in effect */
+    z-index: 100;
+    /* Ensure it appears above other elements */
+}
+
+.action-wrapper:hover .action-dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s ease;
+}
+
+
+.dropdown-item img {
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown-item svg {
+    width: 16px;
+    height: 16px;
 }

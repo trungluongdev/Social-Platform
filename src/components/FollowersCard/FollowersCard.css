@@ -24,6 +24,13 @@
     border-radius: 50%;
 }
 
+.UnfollowButton {
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    background: transparent;
+}
+
 .name {
     display: flex;
     flex-direction: column;

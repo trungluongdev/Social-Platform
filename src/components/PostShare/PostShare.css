@@ -73,3 +73,7 @@
     object-fit: cover;
     border-radius: 0.5rem;
 }
+
+.comment-input input {
+    background-color: var(--inputColor);
+}
